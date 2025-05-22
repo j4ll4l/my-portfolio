@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="flex justify-between items-center p-8 lg:px-12 relative z-20">
-      <div class="text-3xl font-bold dark:text-white">Logo</div>
+      <div id="logo" :style="{ backgroundImage: `url(${logo})` }" class="text-3xl font-bold dark:text-white"></div>
 
       <!-- Mobile Button -->
       <div class="md:hidden z-30">
@@ -54,6 +54,7 @@
   </header>
 </template>
 <script setup>
+import logo from '@/assets/images/logo.png'
 import { ref } from "vue";
 const isMenuOpen = ref(false);
 const menu = ref([
@@ -85,4 +86,12 @@ const toggleDarkMode = () => {
     isDarkMode.value = !isDarkMode.value;
 };
 </script>
-<style lang=""></style>
+<style >
+#logo{
+    background-image: url('@/assets/images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 100px;
+}
+</style>

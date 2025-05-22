@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+import pseudoElements from 'tailwindcss-pseudo-elements'
 export default {
   content: ['./index.html','./src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
@@ -30,5 +31,15 @@ export default {
       addUtilities(newUtilities, ['responsive', 'dark']);
     }
   ],
+  variants: {
+    extend: {
+      // Ajoute les variants nécessaires
+      borderWidth: ['before', 'after'],
+      width: ['before', 'after'],
+      height: ['before', 'after'],
+      boxShadow: ['before', 'after'],
+      backgroundColor: ['before', 'after'],
+    }
+  }
 }
 
