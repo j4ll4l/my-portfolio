@@ -4,6 +4,7 @@ const NavBar = defineAsyncComponent(() => import('@/components/layout/NavBar.vue
 const HeroSection = defineAsyncComponent(() => import('@/components/layout/HeroSection.vue'));
 const Skills = defineAsyncComponent(() => import('@/components/layout/Skills.vue'));
 const Whyme = defineAsyncComponent(() => import('@/components/layout/Whyme.vue'));
+const Projects = defineAsyncComponent(() => import('@/components/layout/Projects.vue'));
 </script>
 
 <template>
@@ -12,6 +13,7 @@ const Whyme = defineAsyncComponent(() => import('@/components/layout/Whyme.vue')
   <HeroSection />
   <Skills />
   <Whyme />
+  <Projects />
 </div>
 </template>
 

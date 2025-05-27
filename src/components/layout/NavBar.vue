@@ -11,7 +11,7 @@
         >
           <span
             v-if="isMenuOpen"
-            class="text-5xl md:text-primary text-white dark:text-white"
+            class="text-5xl md:text-primary text-white dark:text-white  bg-transparent"
           >
             <Icon icon="material-symbols:close" />
           </span>
@@ -25,11 +25,11 @@
       </div>
 
       <!-- NavBar -->
-
+      <!-- TODO Regle le  -->
       <nav
         :class="[
-          `fixed inset-0 z-20 flex flex-col items-center justify-center 
-          bg-primary md:relative md:bg-transparent md:flex md:justify-between md:flex-row ${isMenuOpen ? 'block' : 'hidden'}`, 'md:flex'
+          `fixed inset-0 z-20 flex flex-col items-center justify-center bg-[#D4EBF8]
+       dark:bg-[#080326]  md:relative  md:flex md:justify-between md:flex-row ${isMenuOpen ? 'block' : 'hidden'}`, 'md:flex'
         ]"
       >
         <ul
