@@ -11,7 +11,7 @@
       ></div>
     </div>
     <div
-      class="relative w-[156px] h-[45px] flex justify-center items-center rounded-full bg-secondary text-primary border border-primary"
+      class="relative w-[156px] h-[45px] flex justify-center items-center rounded-full bg-white dark:hover:bg-secondary text-primary border border-primary"
     >
     {{ label }}
     </div>
