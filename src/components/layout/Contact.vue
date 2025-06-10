@@ -1,6 +1,7 @@
 <script setup>
 import SectionHeader from "@/components/UI/SectionHeader.vue";
 import Input from "@/components/UI/Input.vue";
+import Button from "@/components/UI/Button.vue";
 import { ref } from "vue";
 
 const inputs = ref([
@@ -39,6 +40,9 @@ const inputs = ref([
             :placeholder="item.placeholder"
             :rows="item.rows"
           />
+        </div>
+        <div class="flex justify-center">
+            <Button  label="Envoyez"/>
         </div>
       </form>
     </div>
