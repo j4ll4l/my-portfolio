@@ -50,13 +50,13 @@ const projects = ref([
 //Navigation options
 const navigationOptions = {
   prevEl: ".swiper-prev",
-  nextEl: "swiper-next",
+  nextEl: ".swiper-next",
 };
 </script>
 
 <template>
     <!-- TODO Regle les carte -->
-  <section id="projects" class="relative w-11/12 px-16 mx-auto">
+  <section id="projects" class="relative w-full mx-auto">
     <SectionHeader title="My Projects" />
     <!-- Custom Buttons  -->
     <button
@@ -83,11 +83,12 @@ const navigationOptions = {
         modifier: 1,
         slideShadows: true,
       }"
-      :navigation="navigationOptions"
+      
       loop
       pagination
       :modules="[EffectCoverflow, Navigation]"
-      class="max-w-full mt-32"
+      class="max-w-full mt-32 "
+      
     >
       <swiper-slide
         class="max-w-[300px]"
@@ -116,5 +117,6 @@ const navigationOptions = {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 </style>

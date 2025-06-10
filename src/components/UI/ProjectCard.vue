@@ -4,7 +4,7 @@ defineProps({
   description: { type: String, required: true, default: "Project Description" },
   image: { type: String, required: true },
   tags: {
-    type: String,
+    type: Array,
     required: true,
     default: () => ["vuejs", "Tailwind css"],
   },
