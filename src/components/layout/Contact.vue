@@ -6,16 +6,16 @@ import { ref } from "vue";
 
 const inputs = ref([
   {
-    id: "email",
-    label: "Votre email",
+    id: "name",
+    label: "Nom",
     type: "text",
-    placeholder: "email@example.com",
+    placeholder: "Votre Nom ",
   },
   {
-    id: "subject",
-    label: "Subject",
-    type: "text",
-    placeholder: "Comment je peux aider ",
+    id: "email",
+    label: "Votre email",
+    type: "email",
+    placeholder: "email@example.com",
   },
   {
     id: "message",
@@ -31,18 +31,33 @@ const inputs = ref([
   <section class="mt-32" id="contact">
     <SectionHeader title="Contact Me" />
     <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-      <form action="" class="space-y-8">
-        <div v-for="(item,idx) in inputs" :key="idx">
+      <form
+        action="https://api.web3forms.com/submit"
+        method="POST"
+        class="space-y-8"
+      >
+        <!-- Clé d'accès Web3Forms -->
+        <input type="hidden" name="apikey" value="36b32774-b242-4b1b-a7c9-b212ca48a1cc">
+
+        <div v-for="(item, idx) in inputs" :key="idx">
           <Input
             :id="item.id"
             :label="item.label"
             :type="item.type"
             :placeholder="item.placeholder"
             :rows="item.rows"
+            :name="item.id"
+            required
           />
         </div>
         <div class="flex justify-center">
-            <Button  label="Envoyez"/>
+          <!-- Redirection après succès -->
+          <input
+            type="hidden"
+            name="redirect"
+            value="https://web3forms.com/success"
+          />
+          <Button label="Envoyez" />
         </div>
       </form>
     </div>

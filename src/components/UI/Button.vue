@@ -7,11 +7,11 @@
       class="absolute inset-0 scale-[1.06] blur-lg transition-transform duration-300"
     >
       <div
-        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] rounded-full bg-gradient-to-r from-[#00c6cc] via-[#785ae4] to-secondary animate-rotate"
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] rounded-full bg-gradient-to-r from-[#00c6cc] via-[#785ae4] to-secondary animate-rotate "
       ></div>
     </div>
     <div
-      class="relative w-[156px] h-[45px] flex justify-center items-center rounded-full bg-white dark:hover:bg-secondary text-primary border border-primary"
+      class="relative w-[156px] h-[45px] flex justify-center items-center rounded-full   bg-white hover:bg-secondary text-primary border border-primary dark:bg-secondary"
     >
     {{ label }}
     </div>

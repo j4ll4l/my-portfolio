@@ -45,6 +45,24 @@ const projects = ref([
     liveLinks: "/",
     codeLink: "",
   },
+  {
+    title: "Portfolio",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
+    image: "/logo.png",
+    tags: ["VueJs", "Tailwind css"],
+    liveLinks: "/",
+    codeLink: "",
+  },
+  {
+    title: "Portfolio",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
+    image: "/logo.png",
+    tags: ["VueJs", "Tailwind css"],
+    liveLinks: "/",
+    codeLink: "",
+  },
 ]);
 
 //Navigation options

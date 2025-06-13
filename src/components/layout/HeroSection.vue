@@ -16,14 +16,16 @@ import Button from "@/components/UI/Button.vue";
     <main
       class="absolute grid lg:grid-cols-2 grid-cols-1 items-center p-2 lg:p-8"
     >
-      <header class="text-center lg:text-left order-2 lg:order-1">
-        <h1 class="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold">
-          👋Hi, I'm
-          <span
-            class="text-secondary stroke-text text-stroke-primary dark:text-stroke-secondary"
-            >Jallal</span
-          >
-        </h1>
+      <header class="text-center lg:text-left order-2 lg:order-1 typewriter">
+        
+          <h1 class="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold text-primary dark:text-secondary">
+            Hi, I'm
+            <span
+              class="text-secondary stroke-text text-stroke-primary dark:text-stroke-secondary"
+              >Jallal</span
+            >👋
+          </h1>
+        
         <!-- TODO Ajoute des couleur pour le language -->
         <p class="text-lg max-w-xl mx-auto lg:mx-0 font-semibold">
           Développeur web débutant et passionné, je me forme activement à la
@@ -98,5 +100,30 @@ import Button from "@/components/UI/Button.vue";
 
 .container .card:nth-of-type(1)::before {
   filter: url(#wavy1);
+}
+
+.typewriter h1 {
+  overflow: hidden; 
+   border-right: .15em solid #222831;
+  white-space: nowrap; 
+  margin: 0 auto; 
+   letter-spacing: .15em; 
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #222831; }
+  100% { border-color: transparent;}
+  
 }
 </style>

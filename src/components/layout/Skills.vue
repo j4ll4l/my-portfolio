@@ -8,7 +8,7 @@
                 v-for="(skill,index) in skills" :key="index" :class="`mx-[30px] rounded-[12px] mb-7 bg-gradient-to-t ${skill.bgGradient}`"
                 >
                     <div class="rounded-[12px] bg-primary mt-[3px] p-12 md:p-5 text-center">
-                        <h3 class=" font-bold text-[35px] text-white flex items-center justify-center">
+                        <h3 class=" font-bold text-[35px] text-secondary flex items-center justify-center">
                             <CountUp v-if="visibleItems[index]" :endVal="skill.percentage" :startVal="0" :duration="4" /> %
                         </h3>
                         <p class="font-normal text-[16px]" :style="{ color:skill.textColor }">{{ skill.title }}</p>
