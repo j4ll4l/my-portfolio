@@ -11,7 +11,7 @@
       ></div>
     </div>
     <div
-      class="relative w-[156px] h-[45px] flex justify-center items-center rounded-full   bg-white hover:bg-secondary text-primary border border-primary dark:bg-secondary"
+      class="relative w-[156px] h-[45px] flex justify-center items-center rounded-full   bg-white hover:bg-[#D4EBF8] text-primary border border-primary dark:bg-secondary dark:hover:bg-white"
     >
     {{ label }}
     </div>

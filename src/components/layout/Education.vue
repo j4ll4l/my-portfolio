@@ -35,7 +35,7 @@ const Education = ref([
     {
         duration:'13/12/2024-28/11/2025',
         school:'CCI Formation Pro',
-        degree:'Bac+2'
+        degree:'Titre professionelle niveau Bac+2'
     },
     {
         duration:'01/09/2015-10/07/2019',

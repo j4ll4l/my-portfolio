@@ -25,7 +25,7 @@
       </div>
 
       <!-- NavBar -->
-      <!-- TODO Regle le  -->
+   
       <nav
         :class="[
           `fixed inset-0 z-20 flex flex-col items-center justify-center bg-[#D4EBF8]
@@ -38,7 +38,7 @@
           <li v-for="item in menu" :key="item.name">
             <a
               :href="item.href"
-              class="block transition ease-linear md:text-lg lg:text-xl font-bold text-wite md:text-primary hover:text-secondary dark:text-white dark:hover:text-secondary"
+              class="block transition ease-linear md:text-lg lg:text-xl font-bold text-wite md:text-primary hover:text-white dark:text-secondary dark:hover:text-white"
               @click="scrollSection(item.href)"
             >
               {{ item.name }}

@@ -26,8 +26,8 @@ import Button from "@/components/UI/Button.vue";
             >👋
           </h1>
         
-        <!-- TODO Ajoute des couleur pour le language -->
-        <p class="text-lg max-w-xl mx-auto lg:mx-0 font-semibold">
+    
+        <p class="text-lg max-w-xl mx-auto lg:mx-0 font-semibold text-[#393E46] dark:text-white">
           Développeur web débutant et passionné, je me forme activement à la
           création de sites modernes et fonctionnels en utilisant
           <span class="text-primary dark:text-secondary font-bold">PHP</span>,
@@ -46,7 +46,8 @@ import Button from "@/components/UI/Button.vue";
         <div class="mt-6 flex justify-center lg:justify-start">
           <Button label="Hire me" />
           <a
-            href=""
+            href="/cv_jallal.pdf"
+            download
             class="font-semibold text-lg w-[10rem] h-[55px] dark:text-secondary rounded-full ml-2 border-2 dark:border hover:scale-105 bg-white dark:bg-transparent flex justify-center items-center text-primary border-primary"
           >
             <Icon icon="line-md:download-loop" class="text-3xl" />
@@ -102,15 +103,18 @@ import Button from "@/components/UI/Button.vue";
   filter: url(#wavy1);
 }
 
-.typewriter h1 {
+ .typewriter h1 {
   overflow: hidden; 
-   border-right: .15em solid #222831;
+   border-right: .15em solid var(--caret-color, #222831);
   white-space: nowrap; 
   margin: 0 auto; 
    letter-spacing: .15em; 
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
+}
+:global(html.dark) .typewriter h1 {
+  --caret-color: #DFD0B8;
 }
 
 /* The typing effect */
@@ -122,8 +126,13 @@ import Button from "@/components/UI/Button.vue";
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: #222831; }
+  50% { border-color: var(--caret-color, #222831);}
   100% { border-color: transparent;}
   
+}
+@keyframes blink-caret-dark {
+  from, to { border-color: transparent }
+  50% { border-color: #DFD0B8; }
+  100% { border-color: transparent; }
 }
 </style>
