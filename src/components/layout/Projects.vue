@@ -78,12 +78,12 @@ const navigationOptions = {
     <SectionHeader title="My Projects" />
     <!-- Custom Buttons  -->
     <button
-      class="swiper-prev absolute top-2/3 left-4 transform -translate-y-1/2 z-10 text-white dark:bg-[#080326] bg-[#D4EBF8]"
+      class="swiper-prev absolute top-2/3 left-4 rounded-full w-12 h-12 flex items-center justify-center transform -translate-y-1/2 z-10 text-white dark:bg-[#080326] bg-[#D4EBF8]"
     >
       <Icon icon="line-md:arrow-left" class="font-bold text-3xl" />
     </button>
     <button
-      class="swiper-next absolute top-2/3 right-4 transform -translate-y-1/2 z-10 text-white dark:bg-[#080326] bg-[#D4EBF8]"
+      class="swiper-next absolute top-2/3 right-4 rounded-full w-12 h-12 flex items-center justify-center transform -translate-y-1/2 z-10 text-white dark:bg-[#080326] bg-[#D4EBF8]"
     >
       <Icon icon="line-md:arrow-right" class="font-bold text-3xl" />
     </button>
@@ -101,7 +101,7 @@ const navigationOptions = {
         modifier: 1,
         slideShadows: true,
       }"
-      
+     :navigation ="navigationOptions"
       loop
       pagination
       :modules="[EffectCoverflow, Navigation]"
