@@ -33,6 +33,30 @@ const projects = ref([
     liveLinks: "https://github.com/j4ll4l/To_Do_List",
     codeLink: "",
   },
+  {
+    title: "Portfolio",
+    description: "Mon portfolio personnel.",
+    image: "/portfolio.png",
+    tags: ["VueJs", "Tailwind css"],
+    liveLinks: "https://github.com/j4ll4l/my-portfolio",
+    codeLink: "",
+  },
+  {
+    title: "MyMeteo",
+    description: "Application météo.",
+    image: "/mymeteo.png",
+    tags: ["VueJs", "Tailwind css"],
+    liveLinks: "https://github.com/j4ll4l/Meteo-Map-France-Suisse",
+    codeLink: "",
+  },
+  {
+    title: "ToDo List",
+    description: "Gestionnaire de tâches.",
+    image: "/todo.png",
+    tags: ["VueJs", "Tailwind css"],
+    liveLinks: "https://github.com/j4ll4l/To_Do_List",
+    codeLink: "",
+  },
 ]);
 
 //Navigation options
