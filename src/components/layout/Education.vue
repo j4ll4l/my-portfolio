@@ -31,12 +31,16 @@
 import { ref } from 'vue';
 
 const Education = ref([
-    
     {
         duration:'13/12/2024-28/11/2025',
-        school:'CCI Formation Pro',
-        degree:'Titre professionelle niveau Bac+2'
+        school:'Université Lyon 1',
+        degree:'License Informatique'
     },
+    // {
+    //     duration:'13/12/2024-28/11/2025',
+    //     school:'CCI Formation Pro',
+    //     degree:'Titre professionelle niveau Bac+2'
+    // },
     {
         duration:'01/09/2015-10/07/2019',
         school:'I.T.I.S E.Majorana',
