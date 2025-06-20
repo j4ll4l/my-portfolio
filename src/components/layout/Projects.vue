@@ -11,59 +11,28 @@ import { Icon } from "@iconify/vue";
 const projects = ref([
   {
     title: "Portfolio",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
-    image: "@/assets/images/portfolio.png",
+    description: "Mon portfolio personnel.",
+    image: "/portfolio.png",
     tags: ["VueJs", "Tailwind css"],
     liveLinks: "https://github.com/j4ll4l/my-portfolio",
     codeLink: "",
   },
   {
     title: "MyMeteo",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
-    image: "@/assets/images/mymeteo.png",
-    tags: ["Js", "Bootstrap css"],
-    liveLinks: "https://github.com/j4ll4l/Meteo-Map-France-Suisse",
-    codeLink: "",
-  },
-  {
-    title: "ToDo List",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
-    image: "@/assets/images/todo.png",
-    tags: ["Js", "Bootstrap css"],
-    liveLinks: "https://github.com/j4ll4l/To_Do_List",
-    codeLink: "",
-  },
-  {
-    title: "Portfolio",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
-    image: "@/assets/images/portfolio.png",
-    tags: ["VueJs", "Tailwind css"],
-    liveLinks: "https://github.com/j4ll4l/my-portfolio",
-    codeLink: "",
-  },
-  {
-    title: "MyMeteo",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
-    image: "@/assets/images/mymeteo.png",
+    description: "Application météo.",
+    image: "/mymeteo.png",
     tags: ["VueJs", "Tailwind css"],
     liveLinks: "https://github.com/j4ll4l/Meteo-Map-France-Suisse",
     codeLink: "",
   },
   {
     title: "ToDo List",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
-    image: "@/assets/images/todo.png",
+    description: "Gestionnaire de tâches.",
+    image: "/todo.png",
     tags: ["VueJs", "Tailwind css"],
     liveLinks: "https://github.com/j4ll4l/To_Do_List",
     codeLink: "",
   },
-  
 ]);
 
 //Navigation options
@@ -117,7 +86,7 @@ const navigationOptions = {
         <ProjectCard
           :title="project.title"
           :description="project.description"
-          :image="'src/assets/images/' + project.image"
+          :image="project.image"
           :tags="project.tags"
           :liveLinks="project.liveLinks"
           :codeLink="project.codeLink"

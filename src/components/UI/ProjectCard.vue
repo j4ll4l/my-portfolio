@@ -19,7 +19,7 @@ defineProps({
   >
     <!-- Card Image -->
     <figure class="">
-      <img src="image" alt="Image Project" class="w-full h-48 object-cover" />
+      <img :src="image" alt="Image Project" class="w-full h-48 object-cover" />
     </figure>
 
     <!-- Card Content -->
