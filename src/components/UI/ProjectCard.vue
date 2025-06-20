@@ -15,7 +15,7 @@ defineProps({
 
 <template>
   <article
-    class="max-w-sm overflow-hidden shadow-lg rounded border border-secondary dark:bg-[#ffffff29] bg-primary"
+    class="max-w-sm overflow-hidden shadow-lg rounded border border-gray-700 dark:bg-[#ffffff29] bg-primary"
   >
     <!-- Card Image -->
     <figure class="">
@@ -47,15 +47,17 @@ defineProps({
       <a
         :href="liveLinks"
         v-if="liveLinks"
-        class="text-seconadry font-semibold hover:underline text-sm"
-        >Live Demo</a
-      >
+        target="_blank"
+        class="text-gray-400 font-semibold hover:underline text-sm"
+        >View Code
+      </a>
       <a
         :href="codeLinks"
         v-if="codeLinks"
+        target="_blank"
         class="text-secondary font-semibold hover:underline text-sm"
-        >View Code</a
-      >
+        >View Code
+      </a>
     </div>
   </article>
 </template>

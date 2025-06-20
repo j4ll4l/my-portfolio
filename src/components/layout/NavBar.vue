@@ -1,7 +1,9 @@
 <template>
   <header>
-    <div class="flex justify-between items-center p-8 lg:px-12 relative z-20">
-      <div id="logo" :style="{ backgroundImage: `url(${logo})` }" class="text-3xl font-bold dark:text-white"></div>
+    <div class="flex  justify-end items-center p-8 lg:px-12 relative z-20">
+
+      <!-- TODO Creation a  logo  -->
+      <!-- <div id="logo" :style="{ backgroundImage: `url(${logo})` }" class="text-3xl font-bold dark:text-white "></div> -->
 
       <!-- Mobile Button -->
       <div class="md:hidden z-30">
@@ -11,13 +13,13 @@
         >
           <span
             v-if="isMenuOpen"
-            class="text-5xl md:text-primary text-white dark:text-white  bg-transparent"
+            class="text-5xl md:text-primary text-primary dark:text-secondary  bg-transparent"
           >
             <Icon icon="material-symbols:close" />
           </span>
           <span
             v-else
-            class="text-5xl md:text-primary text-white dark:text-white"
+            class="text-5xl md:text-primary text-primary dark:text-secondary"
           >
             <Icon icon="material-symbols:menu" />
           </span>

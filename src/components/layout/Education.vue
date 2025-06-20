@@ -9,13 +9,13 @@
             v-for="(item,idx) in Education " :key="idx"
             >
                 <article class="flex flex-col lg:flex-row items-center lg:items-start rounded-[12px] bg-white dark:bg-primary
-                mt-[3px] mx-[3px] p-6 md:p-8 lg:p-10">
+                mt-[3px] mx-[3px] mb-[3px] p-6 md:p-8 lg:p-10">
             <figure class=" w-full lg:w-1/4 flex justify-center lg:justify-start mb-4 lg:mb-0">
                 <Icon icon="hugeicons:university" class=" text-4xl md:text-6xl lg:text-7xl dark:text-secondary" />
             </figure>
             <section class=" w-full lg:w-3/4 lg:pl-4 text-center lg:text-left">
                 <header>
-                    <h3 class="text-xl md:text-2xl font-semibold uppercase  dark:text-secondary">{{ item.school }}</h3>
+                    <h3 class="text-l md:text-lg lg:text-xl font-semibold uppercase  dark:text-secondary">{{ item.school }}</h3>
                 </header>
                 <p class="  text-sm md:text-base dark:text-white">{{ item.degree }}</p>
                 <p class="  text-sm md:text-base dark:text-white">{{ item.duration }}</p>

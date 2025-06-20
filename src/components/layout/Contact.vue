@@ -37,7 +37,11 @@ const inputs = ref([
         class="space-y-8"
       >
         <!-- Clé d'accès Web3Forms -->
-        <input type="hidden" name="apikey" value="36b32774-b242-4b1b-a7c9-b212ca48a1cc">
+        <input
+          type="hidden"
+          name="apikey"
+          value="36b32774-b242-4b1b-a7c9-b212ca48a1cc"
+        />
 
         <div v-for="(item, idx) in inputs" :key="idx">
           <Input
@@ -50,7 +54,7 @@ const inputs = ref([
             required
           />
         </div>
-        <div class="flex justify-center">
+        <div class="flex justify-between">
           <!-- Redirection après succès -->
           <input
             type="hidden"
@@ -58,6 +62,29 @@ const inputs = ref([
             value="https://web3forms.com/success"
           />
           <Button label="Envoyez" />
+          <div class="mt-2 flex justify-center space-x-3 md:space-x-8">
+            <a
+              href="https://x.com/404"
+              target="_blank"
+              class="text-gray-600 hover:text-gray-800"
+            >
+              <Icon icon="simple-icons:x" style="font-size: 2rem" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/jallal-en-naour-3831891a3"
+              target="_blank"
+              class="text-gray-600 hover:text-blue-700"
+            >
+              <Icon icon="fa-brands:linkedin" style="font-size: 2rem" />
+            </a>
+            <a
+              href="https://github.com/j4ll4l"
+              target="_blank"
+              class="text-gray-600 hover:text-gray-800"
+            >
+              <Icon icon="fa-brands:github" style="font-size: 2rem" />
+            </a>
+          </div>
         </div>
       </form>
     </div>

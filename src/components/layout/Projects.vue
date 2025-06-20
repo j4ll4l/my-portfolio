@@ -13,56 +13,57 @@ const projects = ref([
     title: "Portfolio",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
-    image: "/logo.png",
+    image: "/portfolio.png",
     tags: ["VueJs", "Tailwind css"],
-    liveLinks: "/",
+    liveLinks: "https://github.com/j4ll4l/my-portfolio",
+    codeLink: "",
+  },
+  {
+    title: "MyMeteo",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
+    image: "/mymeteo.png",
+    tags: ["Js", "Bootstrap css"],
+    liveLinks: "https://github.com/j4ll4l/Meteo-Map-France-Suisse",
+    codeLink: "",
+  },
+  {
+    title: "ToDo List",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
+    image: "/todo.png",
+    tags: ["Js", "Bootstrap css"],
+    liveLinks: "https://github.com/j4ll4l/To_Do_List",
     codeLink: "",
   },
   {
     title: "Portfolio",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
-    image: "/logo.png",
+    image: "/portfolio.png",
     tags: ["VueJs", "Tailwind css"],
-    liveLinks: "/",
+    liveLinks: "https://github.com/j4ll4l/my-portfolio",
     codeLink: "",
   },
   {
-    title: "Portfolio",
+    title: "MyMeteo",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
-    image: "/logo.png",
+    image: "/mymeteo.png",
     tags: ["VueJs", "Tailwind css"],
-    liveLinks: "/",
+    liveLinks: "https://github.com/j4ll4l/Meteo-Map-France-Suisse",
     codeLink: "",
   },
   {
-    title: "Portfolio",
+    title: "ToDo List",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
-    image: "/logo.png",
+    image: "/todo.png",
     tags: ["VueJs", "Tailwind css"],
-    liveLinks: "/",
+    liveLinks: "https://github.com/j4ll4l/To_Do_List",
     codeLink: "",
   },
-  {
-    title: "Portfolio",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
-    image: "/logo.png",
-    tags: ["VueJs", "Tailwind css"],
-    liveLinks: "/",
-    codeLink: "",
-  },
-  {
-    title: "Portfolio",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
-    image: "/logo.png",
-    tags: ["VueJs", "Tailwind css"],
-    liveLinks: "/",
-    codeLink: "",
-  },
+  
 ]);
 
 //Navigation options
@@ -73,17 +74,17 @@ const navigationOptions = {
 </script>
 
 <template>
-    <!-- TODO Regle les carte -->
+ 
   <section id="projects" class="relative w-full mx-auto">
     <SectionHeader title="My Projects" />
     <!-- Custom Buttons  -->
     <button
-      class="swiper-prev absolute top-2/3 left-4 rounded-full w-12 h-12 flex items-center justify-center transform -translate-y-1/2 z-10 text-white dark:bg-[#080326] bg-[#D4EBF8]"
+      class="swiper-prev absolute top-2/3 left-4 rounded-full w-12 h-12 flex items-center justify-center transform -translate-y-1/2 z-10 text-white dark:bg-[#080326] bg-primary"
     >
       <Icon icon="line-md:arrow-left" class="font-bold text-3xl" />
     </button>
     <button
-      class="swiper-next absolute top-2/3 right-4 rounded-full w-12 h-12 flex items-center justify-center transform -translate-y-1/2 z-10 text-white dark:bg-[#080326] bg-[#D4EBF8]"
+      class="swiper-next absolute top-2/3 right-4 rounded-full w-12 h-12 flex items-center justify-center transform -translate-y-1/2 z-10 text-white dark:bg-[#080326] bg-primary"
     >
       <Icon icon="line-md:arrow-right" class="font-bold text-3xl" />
     </button>
@@ -99,7 +100,7 @@ const navigationOptions = {
         stretch: 0,
         depth: 100,
         modifier: 1,
-        slideShadows: true,
+        slideShadows: false,
       }"
      :navigation ="navigationOptions"
       loop

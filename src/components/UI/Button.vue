@@ -1,17 +1,17 @@
 <template>
   <button
-    class="relative overflow-hidden rounded-full bg-gray-700 dark:bg-white text-white w-[180px] h-[60px] text-lg font-semibold flex justify-center items-center transition-all duration-300"
+    class="relative overflow-hidden rounded-full bg-gray-700 dark:bg-secondary text-white w-[180px] h-[60px] text-lg font-semibold flex justify-center items-center transition-all duration-300"
     @click="onClick"
   >
     <div
       class="absolute inset-0 scale-[1.06] blur-lg transition-transform duration-300"
     >
       <div
-        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] rounded-full bg-gradient-to-r from-[#00c6cc] via-[#785ae4] to-secondary animate-rotate "
+        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[100%] h-[100%] rounded-full bg-gradient-to-r from-[#00c6cc] via-[#785ae4] to-secondary animate-rotate  dark:bg-gradient-to-r from-primary   to-secondary"
       ></div>
     </div>
     <div
-      class="relative w-[156px] h-[45px] flex justify-center items-center rounded-full   bg-white hover:bg-[#D4EBF8] text-primary border border-primary dark:bg-secondary dark:hover:bg-white"
+      class="relative w-[156px] h-[45px] flex justify-center items-center rounded-full   bg-white hover:bg-[#D4EBF8] text-primary border border-primary dark:bg-[#080326] dark:text-secondary dark:hover:bg-secondary dark:hover:text-[#080326]"
     >
     {{ label }}
     </div>

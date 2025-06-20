@@ -6,28 +6,23 @@ import Button from "@/components/UI/Button.vue";
   <section
     class="flex justify-center items-center dark:text-white min-h-screen mt-0 lg:mt-0"
   >
-    <!-- EFFETC Hombre -->
-    <!-- <header
-      class="absolute w-1/2 aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-r from-[#393E46] via-[#948979] to-secondary opacity-30 dark:opacity-20 blur-[100px] left-10 top-0 hidden md:block"
-    ></header>
-    <header
-      class="absolute w-1/2 aspect-[16/5] -skew-x-12 rounded-full bg-gradient-to-r from-[#393E46] via-[#948979] to-secondary opacity-30 dark:opacity-20 blur-[100px] left-10 top-0 hidden md:block"
-    ></header> -->
     <main
       class="absolute grid lg:grid-cols-2 grid-cols-1 items-center p-2 lg:p-8"
     >
       <header class="text-center lg:text-left order-2 lg:order-1 typewriter">
-        
-          <h1 class="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold text-primary dark:text-secondary">
-            Hi, I'm
-            <span
-              class="text-secondary stroke-text text-stroke-primary dark:text-stroke-secondary"
-              >Jallal</span
-            >👋
-          </h1>
-        
-    
-        <p class="text-lg max-w-xl mx-auto lg:mx-0 font-semibold text-[#393E46] dark:text-white">
+        <h1
+          class="mb-6 text-4xl md:text-5xl lg:text-6xl font-bold text-primary dark:text-secondary"
+        >
+          Hi, I'm
+          <span
+            class="text-secondary stroke-text text-stroke-primary dark:text-stroke-secondary"
+            >Jallal</span
+          >👋
+        </h1>
+
+        <p
+          class="text-lg max-w-xl mx-auto lg:mx-0 font-semibold text-[#393E46] dark:text-white"
+        >
           Développeur web débutant et passionné, je me forme activement à la
           création de sites modernes et fonctionnels en utilisant
           <span class="text-primary dark:text-secondary font-bold">PHP</span>,
@@ -58,17 +53,23 @@ import Button from "@/components/UI/Button.vue";
       <aside
         class="container flex justify-center lg:justify-end mt-0 items-center flex-wrap order-1 lg:order-2"
       >
-        <!-- TODO Regle le classe css pour l effet bordure -->
+     
         <figure
-          class="card relative m-[30px] md:w-[420px] md:h-[420px] md:before:w-[450px] md:before:h-[450px] w-[280px] h-[350px] before:w-[300px] before:h-[300px] before:border-[25px] before:border-primary before:shadow-[7px_7px_21px_secondary,_-7px_-7px_21px_secondary]"
+          class="card relative -mt-[150px] mb-8 m-[30px] md:w-[420px] md:h-[420px] md:before:w-[450px] md:before:h-[450px] w-[280px] h-[350px] before:w-[300px] before:h-[300px] "
         >
           <div
             class="relative w-full h-full bg-cover transform translate-x-[10px] translate-y-[10px]"
           >
             <img
-              src="@/assets/images/avatar.PNG"
-              alt="My Image"
-              class="max-w-1/2"
+              src="@/assets/images/avatar_light.jpg"
+              alt="Light"
+              class="block dark:hidden max-w-1/2"
+              loading="lazy"
+            />
+            <img
+              src="@/assets/images/avatar_dark.jpg"
+              alt="Dark"
+              class="hidden dark:block max-w-1/2"
               loading="lazy"
             />
           </div>
@@ -99,40 +100,55 @@ import Button from "@/components/UI/Button.vue";
   background: transparent;
 }
 
-.container .card:nth-of-type(1)::before {
+.container .card:nth-of-type(1):before {
   filter: url(#wavy1);
 }
 
- .typewriter h1 {
-  overflow: hidden; 
-   border-right: .15em solid var(--caret-color, #222831);
-  white-space: nowrap; 
-  margin: 0 auto; 
-   letter-spacing: .15em; 
-  animation: 
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
+.typewriter h1 {
+  overflow: hidden;
+  border-right: 0.15em solid var(--caret-color, #222831);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 :global(html.dark) .typewriter h1 {
-  --caret-color: #DFD0B8;
+  --caret-color: #dfd0b8;
 }
 
 /* The typing effect */
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: var(--caret-color, #222831);}
-  100% { border-color: transparent;}
-  
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--caret-color, #222831);
+  }
+  100% {
+    border-color: transparent;
+  }
 }
 @keyframes blink-caret-dark {
-  from, to { border-color: transparent }
-  50% { border-color: #DFD0B8; }
-  100% { border-color: transparent; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #dfd0b8;
+  }
+  100% {
+    border-color: transparent;
+  }
 }
 </style>

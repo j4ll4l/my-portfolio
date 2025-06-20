@@ -19,7 +19,7 @@ onUnmounted(()=>{
   <button
     v-if="isVisible"
     @click="scrollToTop"
-    class="fixed bottom-4 right-4 bg-gradient-to-r bg-primary dark:bg-secondary text-white rounded-full w-12 h-12 flex items-center justify-center text-xl cursor-pointer transition-opacity duration-300 hover:bg-[#D4EBF8] hover:text-primary dark:hover:bg-[#080326] dark:hover:text-secondary"
+    class="fixed bottom-4 right-4 bg-gradient-to-r bg-primary dark:bg-secondary text-white rounded-full w-12 h-12 flex items-center justify-center text-xl cursor-pointer transition-opacity duration-300 hover:bg-[#A5D4F0] hover:text-primary dark:hover:bg-[#2A1A66] dark:hover:text-secondary"
   >
     <Icon icon="line-md:arrow-up" class="font-bold" />
   </button>
