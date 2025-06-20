@@ -1,9 +1,13 @@
 <template>
   <header>
-    <div class="flex  justify-end items-center p-8 lg:px-12 relative z-20">
+    <div class="flex  justify-between items-center p-8 lg:px-12 relative z-20">
 
       <!-- TODO Creation a  logo  -->
       <!-- <div id="logo" :style="{ backgroundImage: `url(${logo})` }" class="text-3xl font-bold dark:text-white "></div> -->
+       <button @click="toggleDarkMode" class="text-white ml-2 z-10 block">
+  <Icon v-if="!isDarkMode" icon="line-md:moon-filled" class="text-5xl text-primary" />
+  <Icon v-else icon="line-md:sunny-outline" class="text-5xl text-secondary" />
+</button>
 
       <!-- Mobile Button -->
       <div class="md:hidden z-30">
@@ -47,10 +51,10 @@
             </a>
           </li>
         </ul>
-        <button @click="toggleDarkMode"  class="text-white ml-20 z-10 hidden md:block">
+        <!-- <button @click="toggleDarkMode"  class="text-white ml-20 z-10 hidden md:block">
             <Icon v-if="!isDarkMode"icon="line-md:moon-filled" class="text-5xl text-primary" />
             <Icon v-else icon="line-md:sunny-outline" class="text-5xl text-secondary" />
-        </button>
+        </button> -->
       </nav>
     </div>
   </header>
