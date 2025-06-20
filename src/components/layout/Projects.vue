@@ -13,7 +13,7 @@ const projects = ref([
     title: "Portfolio",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
-    image: "/portfolio.png",
+    image: "@/assets/images/portfolio.png",
     tags: ["VueJs", "Tailwind css"],
     liveLinks: "https://github.com/j4ll4l/my-portfolio",
     codeLink: "",
@@ -22,7 +22,7 @@ const projects = ref([
     title: "MyMeteo",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
-    image: "/mymeteo.png",
+    image: "@/assets/images/mymeteo.png",
     tags: ["Js", "Bootstrap css"],
     liveLinks: "https://github.com/j4ll4l/Meteo-Map-France-Suisse",
     codeLink: "",
@@ -31,7 +31,7 @@ const projects = ref([
     title: "ToDo List",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
-    image: "/todo.png",
+    image: "@/assets/images/todo.png",
     tags: ["Js", "Bootstrap css"],
     liveLinks: "https://github.com/j4ll4l/To_Do_List",
     codeLink: "",
@@ -40,7 +40,7 @@ const projects = ref([
     title: "Portfolio",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
-    image: "/portfolio.png",
+    image: "@/assets/images/portfolio.png",
     tags: ["VueJs", "Tailwind css"],
     liveLinks: "https://github.com/j4ll4l/my-portfolio",
     codeLink: "",
@@ -49,7 +49,7 @@ const projects = ref([
     title: "MyMeteo",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
-    image: "/mymeteo.png",
+    image: "@/assets/images/mymeteo.png",
     tags: ["VueJs", "Tailwind css"],
     liveLinks: "https://github.com/j4ll4l/Meteo-Map-France-Suisse",
     codeLink: "",
@@ -58,7 +58,7 @@ const projects = ref([
     title: "ToDo List",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad amet debitis aut ducimus quasi! Minus?",
-    image: "/todo.png",
+    image: "@/assets/images/todo.png",
     tags: ["VueJs", "Tailwind css"],
     liveLinks: "https://github.com/j4ll4l/To_Do_List",
     codeLink: "",
