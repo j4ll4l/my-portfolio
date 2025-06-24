@@ -41,7 +41,7 @@ import Button from "@/components/UI/Button.vue";
         <div class="mt-6 flex justify-center lg:justify-start">
           <Button label="Hire me" />
           <a
-            href="/cv_jallal.pdf"
+            href="/CurriculumJallal.pdf"
             download
             class="font-semibold text-lg w-[10rem] h-[55px] dark:text-secondary rounded-full ml-2 border-2 dark:border hover:scale-105 bg-white dark:bg-transparent flex justify-center items-center text-primary border-primary"
           >
