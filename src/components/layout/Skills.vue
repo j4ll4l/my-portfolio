@@ -38,31 +38,31 @@ const skills = ref([
     },
     {
         title:'Js',
-        percentage:90,
+        percentage:70,
         bgGradient:'to-[#acac39] from-[#1f1e1c99]',
         textColor:'#acac39'
     },
     {
         title:'Vuejs',
-        percentage:75,
+        percentage:65,
         bgGradient:'to-[#59c37899] from-[#1f1e1c99]',
         textColor:'#59c378'
     },
     {
         title:'Php',
-        percentage:90,
+        percentage:70,
         bgGradient:'to-[#ff9a0099] from-[#1f1e1c99]',
         textColor:'#ff9a0099'
     },
     {
         title:'MySQL',
-        percentage:95,
+        percentage:80,
         bgGradient:'to-[#9e00ff99] from-[#1f1e1c99]',
         textColor:'#9e00ff99'
     },
     {
         title:'Symfony',
-        percentage:90,
+        percentage:60,
         bgGradient:'to-[#ff9a0099] from-[#1f1e1c99]',
         textColor:'#ff9a0099'
     },
