@@ -64,7 +64,7 @@ const inputs = ref([
           <Button label="Envoyez" />
           <div class="mt-2 flex justify-center space-x-3 md:space-x-8">
             <a
-              href="https://x.com/404"
+              href="https://x.com/jallaldev"
               target="_blank"
               class="text-gray-600 hover:text-gray-800"
             >
