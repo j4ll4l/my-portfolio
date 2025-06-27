@@ -12,11 +12,11 @@ const Experience = ref([
         title:'Ass. Responsable',
         company:'INPS Turin'
     },
-    {
-        duration:'01/01/2020-30/07/2024',
-        title: 'Mission interim',
-        company:'Start People'
-    }
+    // {
+    //     duration:'01/01/2020-30/07/2024',
+    //     title: 'Mission interim',
+    //     company:'Start People'
+    // }
 ])
 </script>
 

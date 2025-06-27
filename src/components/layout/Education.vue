@@ -31,11 +31,11 @@
 import { ref } from 'vue';
 
 const Education = ref([
-    {
-        duration:'01/09/2020-30/06/2022',
-        school:'Université Lyon 1',
-        degree:' Informatique'
-    },
+    // {
+    //     duration:'01/09/2020-30/06/2022',
+    //     school:'Université Lyon 1',
+    //     degree:' Informatique'
+    // },
     {
         duration:'13/12/2024-28/11/2025',
         school:'CCI Pro',
