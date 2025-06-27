@@ -34,6 +34,14 @@ const projects = ref([
     codeLink: "",
   },
   {
+    title: "CarMove",
+    description: "Service de conciergerie automobile",
+    image: "/carmove.PNG",
+    tags: ["VueJs", "TypeScript","Css"],
+    liveLinks: "https://github.com/j4ll4l/CarMove",
+    codeLink: "",
+  },
+  {
     title: "Portfolio",
     description: "Mon portfolio personnel.",
     image: "/portfolio.png",
@@ -57,6 +65,14 @@ const projects = ref([
     liveLinks: "https://github.com/j4ll4l/To_Do_List",
     codeLink: "",
   },
+  {
+    title: "CarMove",
+    description: "Service de conciergerie automobile",
+    image: "/carmove.PNG",
+    tags: ["VueJs", "TypeScript","Css"],
+    liveLinks: "https://github.com/j4ll4l/CarMove",
+    codeLink: "",
+  }
 ]);
 
 //Navigation options
