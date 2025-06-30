@@ -91,11 +91,11 @@ const toggleDarkMode = () => {
 };
 </script>
 <style >
-#logo{
+/* #logo{
     background-image: url('@/assets/images/logo.png');
     background-size: contain;
     background-repeat: no-repeat;
     width: 100px;
     height: 100px;
-}
+} */
 </style>
