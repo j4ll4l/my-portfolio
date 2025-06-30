@@ -61,17 +61,12 @@ import Button from "@/components/UI/Button.vue";
             class="relative w-full h-full bg-cover transform translate-x-[10px] translate-y-[10px]"
           >
             <img
-              src="@/assets/images/avatar_light.jpg"
+              src="@/assets/images/avatar.png"
               alt="Light"
-              class="block dark:hidden max-w-1/2"
+              class="block  max-w-1/2"
               loading="lazy"
             />
-            <img
-              src="@/assets/images/avatar_dark.jpg"
-              alt="Dark"
-              class="hidden dark:block max-w-1/2"
-              loading="lazy"
-            />
+          
           </div>
         </figure>
       </aside>

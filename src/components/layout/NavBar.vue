@@ -51,16 +51,13 @@
             </a>
           </li>
         </ul>
-        <!-- <button @click="toggleDarkMode"  class="text-white ml-20 z-10 hidden md:block">
-            <Icon v-if="!isDarkMode"icon="line-md:moon-filled" class="text-5xl text-primary" />
-            <Icon v-else icon="line-md:sunny-outline" class="text-5xl text-secondary" />
-        </button> -->
+        
       </nav>
     </div>
   </header>
 </template>
 <script setup>
-import logo from '@/assets/images/logo.png'
+// import logo from '@/assets/images/logo.png'
 import { ref } from "vue";
 const isMenuOpen = ref(false);
 const menu = ref([
