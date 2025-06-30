@@ -14,7 +14,9 @@
     "swiper": "^11.2.8",
     "tailwindcss-pseudo-elements": "^2.0.0",
     "vue": "^3.5.13",
-    "vue-countup-v3": "^1.4.2"
+    "vue-countup-v3": "^1.4.2",
+    "vue-gtag": "^3.5.1",
+    "vue-gtag-next": "^1.14.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.2.3",
