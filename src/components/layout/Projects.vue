@@ -42,6 +42,14 @@ const projects = ref([
     codeLink: "",
   },
   {
+    title: "Boutique Greg",
+    description: "TP Boutique pour apprendre VueJs et Typescript",
+    image: "/logo_tp_boutique.png",
+    tags: ["VueJs", "TypeScript","Bootstrap Css"],
+    liveLinks: "https://github.com/j4ll4l/Boutique-Greg",
+    codeLink: "",
+  },
+  {
     title: "Portfolio",
     description: "Mon portfolio personnel.",
     image: "/portfolio.png",
@@ -71,6 +79,14 @@ const projects = ref([
     image: "/carmove.PNG",
     tags: ["VueJs", "TypeScript","Css"],
     liveLinks: "https://github.com/j4ll4l/CarMove",
+    codeLink: "",
+  },
+  {
+    title: "Boutique Greg",
+    description: "TP Boutique pour apprendre VueJs et Typescript",
+    image: "/logo_tp_boutique.png",
+    tags: ["VueJs", "TypeScript","Bootstrap Css"],
+    liveLinks: "https://github.com/j4ll4l/Boutique-Greg",
     codeLink: "",
   }
 ]);
