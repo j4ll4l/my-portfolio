@@ -61,7 +61,7 @@ function handleSubmit(e) {
         action="https://api.web3forms.com/submit"
         method="POST"
         class="space-y-8"
-        @submit.prevent="handleSubmit"
+        @submit="handleSubmit"
       >
         <!-- Clé d'accès Web3Forms -->
         <input
