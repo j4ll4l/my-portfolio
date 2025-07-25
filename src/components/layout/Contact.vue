@@ -25,6 +25,32 @@ const inputs = ref([
     rows: 6,
   },
 ]);
+const errors = ref("");
+const formData = ref({ name: "", email: "", message: "" });
+
+function handleInput(id, value) {
+  formData.value[id] = value;
+}
+
+function validateForm() {
+  if (!formData.value.name || !formData.value.email || !formData.value.message) {
+    errors.value = "Tous les champs sont obligatoires.";
+    return false;
+  }
+  // Email simple validation
+  if (!/\S+@\S+\.\S+/.test(formData.value.email)) {
+    errors.value = "L'email n'est pas valide.";
+    return false;
+  }
+  errors.value = "";
+  return true;
+}
+
+function handleSubmit(e) {
+  if (!validateForm()) {
+    e.preventDefault();
+  }
+}
 </script>
 
 <template>
@@ -35,6 +61,7 @@ const inputs = ref([
         action="https://api.web3forms.com/submit"
         method="POST"
         class="space-y-8"
+        @submit.prevent="handleSubmit"
       >
         <!-- Clé d'accès Web3Forms -->
         <input
@@ -52,8 +79,10 @@ const inputs = ref([
             :rows="item.rows"
             :name="item.id"
             required
+            @input="handleInput(item.id, $event.target.value)"
           />
         </div>
+        <div v-if="errors" class="text-red-500 font-bold">{{ errors }}</div>
         <div class="flex justify-between">
           <!-- Redirection après succès -->
           <input
