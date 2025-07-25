@@ -1,5 +1,12 @@
 <script setup>
 import Button from "@/components/UI/Button.vue";
+
+const scrollToContact = () => {
+  const contactSection = document.getElementById('contact');
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: 'smooth' });
+  }
+};
 </script>
 
 <template>
@@ -39,7 +46,7 @@ import Button from "@/components/UI/Button.vue";
           projets concrets.
         </p>
         <div class="mt-6 flex justify-center lg:justify-start">
-          <Button label="Hire me" />
+          <Button label="Hire me" @click="scrollToContact"/>
           <a
             href="/CurriculumJallal.pdf"
             download
