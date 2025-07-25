@@ -82,7 +82,7 @@ function handleSubmit(e) {
             @input="handleInput(item.id, $event.target.value)"
           />
         </div>
-        <div v-if="errors" class="text-red-500 font-bold">{{ errors }}</div>
+        <div v-if="errors" class="text-red-500 font-semi-bold">{{ errors }}</div>
         <div class="flex justify-between">
           <!-- Redirection après succès -->
           <input
