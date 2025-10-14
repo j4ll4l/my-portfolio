@@ -50,6 +50,14 @@ const projects = ref([
     codeLink: "",
   },
   {
+    title: "Gestionnaire de ressource digitales",
+    description: "Gestion de ressource ",
+    image: "/logo_epotion.png",
+    tags: ["VueJs", "TypeScript","Symfony Css"],
+    liveLinks: "https://github.com/j4ll4l/Gestionnaire-de-ressources-digitales",
+    codeLink: "",
+  },
+  {
     title: "Portfolio",
     description: "Mon portfolio personnel.",
     image: "/portfolio.png",
@@ -87,6 +95,14 @@ const projects = ref([
     image: "/logo_tp_boutique.png",
     tags: ["VueJs", "TypeScript","Bootstrap Css"],
     liveLinks: "https://github.com/j4ll4l/Boutique-Greg",
+    codeLink: "",
+  },
+  {
+    title: "Gestionnaire de ressource digitales",
+    description: "Gestion de ressource ",
+    image: "/logo_epotion.png",
+    tags: ["VueJs", "TypeScript","Symfony Css"],
+    liveLinks: "https://github.com/j4ll4l/Gestionnaire-de-ressources-digitales",
     codeLink: "",
   }
 ]);
