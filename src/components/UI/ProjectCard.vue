@@ -43,19 +43,19 @@ defineProps({
     </div>
 
     <!-- Link's -->
-    <div class="px-6 pb-4 flex justify-between items-center">
+    <div class="px-6 pb-4 flex gap-4 items-center">
       <a
         :href="liveLinks"
         v-if="liveLinks"
         target="_blank"
-        class="text-gray-400 font-semibold hover:underline text-sm"
-        >View Code
+        class="text-white font-semibold hover:underline text-sm"
+        >View Website
       </a>
       <a
         :href="codeLinks"
         v-if="codeLinks"
         target="_blank"
-        class="text-secondary font-semibold hover:underline text-sm"
+        class="text-gray-400 font-semibold hover:underline text-sm"
         >View Code
       </a>
     </div>

@@ -8,102 +8,103 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import { Icon } from "@iconify/vue";
+
 const projects = ref([
   {
     title: "Portfolio",
     description: "Mon portfolio personnel.",
     image: "/portfolio.png",
     tags: ["VueJs", "Tailwind css"],
-    liveLinks: "https://github.com/j4ll4l/my-portfolio",
-    codeLink: "",
+    codeLinks: "https://github.com/j4ll4l/my-portfolio",
+    liveLinks: "",
   },
   {
     title: "MyMeteo",
     description: "Application météo.",
     image: "/mymeteo.png",
     tags: ["Js", "Bootstrap css"],
-    liveLinks: "https://github.com/j4ll4l/Meteo-Map-France-Suisse",
-    codeLink: "",
+    codeLinks: "https://github.com/j4ll4l/Meteo-Map-France-Suisse",
+    liveLinks: "https://j4ll4l.github.io/Meteo-Map-France-Suisse/",
   },
   {
     title: "ToDo List",
     description: "Gestionnaire de tâches.",
     image: "/todo.png",
     tags: ["Js", "Bootstrap css"],
-    liveLinks: "https://github.com/j4ll4l/To_Do_List",
-    codeLink: "",
+    codeLinks: "https://github.com/j4ll4l/To_Do_List",
+    liveLinks: "https://j4ll4l.github.io/To_Do_List/",
   },
   {
     title: "La Conciergerie Auto",
     description: "Service de conciergerie automobile",
     image: "/carmove.PNG",
     tags: ["VueJs", "TypeScript","Css","Symfony"],
-    liveLinks: "https://github.com/j4ll4l/LaConciergerie.git",
-    codeLink: "",
+    codeLinks: "https://github.com/j4ll4l/LaConciergerie.git",
+    liveLinks: "",
   },
   {
     title: "Boutique Greg",
     description: "TP Boutique pour apprendre VueJs et Typescript",
     image: "/logo_tp_boutique.png",
     tags: ["VueJs", "TypeScript","Bootstrap Css"],
-    liveLinks: "https://github.com/j4ll4l/Boutique-Greg",
-    codeLink: "",
+    codeLinks: "https://github.com/j4ll4l/Boutique-Greg",
+    liveLinks: "https://shop.gregdesplaces.com/",
   },
   {
     title: "Gestionnaire de ressource digitales",
     description: "Gestion de ressource ",
     image: "/logo_epotion.png",
     tags: ["VueJs", "TypeScript","Symfony Css"],
-    liveLinks: "https://github.com/j4ll4l/Gestionnaire-de-ressources-digitales",
-    codeLink: "",
+    codeLinks: "https://github.com/j4ll4l/Gestionnaire-de-ressources-digitales",
+    liveLinks: "",
   },
   {
     title: "Portfolio",
     description: "Mon portfolio personnel.",
     image: "/portfolio.png",
     tags: ["VueJs", "Tailwind css"],
-    liveLinks: "https://github.com/j4ll4l/my-portfolio",
-    codeLink: "",
+    codeLinks: "https://github.com/j4ll4l/my-portfolio",
+    liveLinks: "",
   },
   {
     title: "MyMeteo",
     description: "Application météo.",
     image: "/mymeteo.png",
     tags: ["Js", "Bootstrap css"],
-    liveLinks: "https://github.com/j4ll4l/Meteo-Map-France-Suisse",
-    codeLink: "",
+    codeLinks: "https://github.com/j4ll4l/Meteo-Map-France-Suisse",
+    liveLinks: "https://j4ll4l.github.io/Meteo-Map-France-Suisse/",
   },
   {
     title: "ToDo List",
     description: "Gestionnaire de tâches.",
     image: "/todo.png",
     tags: ["Js", "Bootstrap css"],
-    liveLinks: "https://github.com/j4ll4l/To_Do_List",
-    codeLink: "",
+    codeLinks: "https://github.com/j4ll4l/To_Do_List",
+    liveLinks: "https://j4ll4l.github.io/To_Do_List/",
   },
   {
     title: "La Conciergerie Auto",
     description: "Service de conciergerie automobile",
     image: "/carmove.PNG",
     tags: ["VueJs", "TypeScript","Css","Symfony"],
-    liveLinks: "https://github.com/j4ll4l/LaConciergerie.git",
-    codeLink: "",
+    codeLinks: "https://github.com/j4ll4l/LaConciergerie.git",
+    liveLinks: "",
   },
   {
     title: "Boutique Greg",
     description: "TP Boutique pour apprendre VueJs et Typescript",
     image: "/logo_tp_boutique.png",
     tags: ["VueJs", "TypeScript","Bootstrap Css"],
-    liveLinks: "https://github.com/j4ll4l/Boutique-Greg",
-    codeLink: "",
+    codeLinks: "https://github.com/j4ll4l/Boutique-Greg",
+    liveLinks: "https://shop.gregdesplaces.com/",
   },
   {
     title: "Gestionnaire de ressource digitales",
     description: "Gestion de ressource ",
     image: "/logo_epotion.png",
     tags: ["VueJs", "TypeScript","Symfony Css"],
-    liveLinks: "https://github.com/j4ll4l/Gestionnaire-de-ressources-digitales",
-    codeLink: "",
+    codeLinks: "https://github.com/j4ll4l/Gestionnaire-de-ressources-digitales",
+    liveLinks: "",
   }
 ]);
 
@@ -160,8 +161,8 @@ const navigationOptions = {
           :description="project.description"
           :image="project.image"
           :tags="project.tags"
+          :codeLinks="project.codeLinks"
           :liveLinks="project.liveLinks"
-          :codeLink="project.codeLink"
         />
       </swiper-slide>
     </swiper>
