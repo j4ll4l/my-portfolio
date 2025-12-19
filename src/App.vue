@@ -1,5 +1,6 @@
 <script setup>
 import { defineAsyncComponent } from 'vue';
+import Snowfall from './components/UI/Snowfall.vue'
 const NavBar = defineAsyncComponent(() => import('@/components/layout/NavBar.vue'));
 const HeroSection = defineAsyncComponent(() => import('@/components/layout/HeroSection.vue'));
 const Skills = defineAsyncComponent(() => import('@/components/layout/Skills.vue'));
@@ -12,6 +13,7 @@ const BackToTop = defineAsyncComponent(() => import('@/components/layout/BackToT
 
 <template>
 <div class="bg-[#D4EBF8] dark:bg-[#080326] min-h-screen">
+  <Snowfall :count="100" />
   <NavBar />
   <HeroSection />
   <Skills />
