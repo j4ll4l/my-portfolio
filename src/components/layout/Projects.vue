@@ -11,6 +11,14 @@ import { Icon } from "@iconify/vue";
 
 const projects = ref([
   {
+    title: "La Conciergerie Auto",
+    description: "Service de conciergerie automobile",
+    image: "/carmove.PNG",
+    tags: ["VueJs", "TypeScript","Css","Symfony"],
+    codeLinks: "https://github.com/j4ll4l/LaConciergerie.git",
+    liveLinks: "https://laconciergerieauto.fr/",
+  },
+  {
     title: "Portfolio",
     description: "Mon portfolio personnel.",
     image: "/portfolio.png",
@@ -33,14 +41,6 @@ const projects = ref([
     tags: ["Js", "Bootstrap css"],
     codeLinks: "https://github.com/j4ll4l/To_Do_List",
     liveLinks: "https://j4ll4l.github.io/To_Do_List/",
-  },
-  {
-    title: "La Conciergerie Auto",
-    description: "Service de conciergerie automobile",
-    image: "/carmove.PNG",
-    tags: ["VueJs", "TypeScript","Css","Symfony"],
-    codeLinks: "https://github.com/j4ll4l/LaConciergerie.git",
-    liveLinks: "",
   },
   {
     title: "Boutique Greg",
@@ -59,6 +59,14 @@ const projects = ref([
     liveLinks: "",
   },
   {
+    title: "La Conciergerie Auto",
+    description: "Service de conciergerie automobile",
+    image: "/carmove.PNG",
+    tags: ["VueJs", "TypeScript","Css","Symfony"],
+    codeLinks: "https://github.com/j4ll4l/LaConciergerie.git",
+    liveLinks: "https://laconciergerieauto.fr/",
+  },
+  {
     title: "Portfolio",
     description: "Mon portfolio personnel.",
     image: "/portfolio.png",
@@ -81,14 +89,6 @@ const projects = ref([
     tags: ["Js", "Bootstrap css"],
     codeLinks: "https://github.com/j4ll4l/To_Do_List",
     liveLinks: "https://j4ll4l.github.io/To_Do_List/",
-  },
-  {
-    title: "La Conciergerie Auto",
-    description: "Service de conciergerie automobile",
-    image: "/carmove.PNG",
-    tags: ["VueJs", "TypeScript","Css","Symfony"],
-    codeLinks: "https://github.com/j4ll4l/LaConciergerie.git",
-    liveLinks: "",
   },
   {
     title: "Boutique Greg",
